@@ -3,7 +3,7 @@ const chalk = require("chalk");
 const { seashell } = require("color-name");
 
 console.log(
-  chalk.underline.bgBlueLight("Let's play a game: ") +
+  chalk.underline.bgGrey("Let's play a game: ") +
     chalk.yellow("How much do you know me? ")
 );
 
@@ -76,7 +76,7 @@ const highScores = [
   },
 ];
 
-console.log(chalk.white.bgRed.bold(`Your Final Score is : ${score}`));
+console.log(chalk.white.bgCyan.bold(`Your Final Score is : ${score}`));
 
 for (var i = 0; i < highScores.length; i++) {
   const scores = highScores[i];
